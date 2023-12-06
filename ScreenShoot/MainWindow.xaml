@@ -1,0 +1,25 @@
+﻿<Window x:Class="ScreenShoot.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScreenShoot"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="Black" >
+        <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="1.5*"/>
+            </Grid.RowDefinitions>
+            <Border Background="#FFDE1ACD" Margin="34,36,36,41">
+
+                <Image  x:Name="ClientImage" Margin="20"/>
+            </Border>
+            
+
+
+            <Button  Content="Take ScreenShot" Grid.Row="1" Height="30" Width="200" FontSize="20" FontWeight="DemiBold" Click="Button_Click" Background="#FF6CFF0B"/>
+        </Grid>
+    </Grid>
+</Window>
